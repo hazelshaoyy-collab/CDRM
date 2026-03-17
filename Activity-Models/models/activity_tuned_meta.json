@@ -1,0 +1,35 @@
+{
+  "model_name": "RandomForest",
+  "public_model_file": "RandomForest_StageA_tuned_bestk24.joblib",
+  "feature_count": 24,
+  "n_total": 578,
+  "n_dev": 491,
+  "n_lockbox": 87,
+  "target_name": "targets",
+  "cv_for_tuning": {
+    "type": "RepeatedKFold",
+    "n_splits": 10,
+    "n_repeats": 3,
+    "random_state": 42
+  },
+  "oof_cv_for_public": {
+    "type": "RepeatedKFold",
+    "n_splits": 5,
+    "n_repeats": 3,
+    "random_state": 42
+  },
+  "post_cv_metrics": {
+    "RMSE_mean": 0.1335696015342368,
+    "RMSE_std": 0.0234679880207508,
+    "R2_mean": 0.9508176378113534,
+    "R2_std": 0.0201532539156836
+  },
+  "best_params": {
+    "rf_max_depth": null,
+    "rf_max_features": "sqrt",
+    "rf_bootstrap": false,
+    "rf_n_estimators": 800,
+    "rf_min_samples_split": 9,
+    "rf_min_samples_leaf": 2
+  }
+}
